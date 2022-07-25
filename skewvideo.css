@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+    
+}
+.cus-div{
+    width: 100%;
+    position: relative;
+}
+#skew1{
+    background: url(img5.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+    background-repeat: no-repeat;
+
+}
+#skew2{
+    background: #c0c0c0;
+    z-index: 9;
+}
+#skew3{
+    background: #c0c0c0;
+    z-index: 8;
+}
+#skew3 .box video{
+       position: relative;
+       top: 0;
+       left: 0;
+       
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      
+      
+}
+#skew4{
+    background: #c0c0c0;
+    z-index: 7;
+}
+#skew5{
+    background: url(ocean.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 6;
+}
+.cus-div:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    content: '';
+}
+#skew1:after,
+#skew4:after{
+    transform-origin: right bottom;
+    transform: skewY(-4deg);
+    
+}
+
+video::after{
+    transform: skew(-14deg);
+}
+.content{
+
+    font-weight: bold;
+    text-align: center;
+    padding: 200px 50px;
+    overflow: hidden;
+    display: block;
+    height: auto;
+}
+.content h2{
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: big john;
+    font-size: 60px;
+}
+.content a{
+    text-decoration: none;
+    color: #fff;
+    background: #039dc8;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+.content a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #40e0d0;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+.content h4{
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+   
+    font-size: 40px;
+}
+.content h3{
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    
+    font-size: 40px;
+}
